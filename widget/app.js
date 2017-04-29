@@ -1,3 +1,19 @@
+$(document).ready(function() {
+	// if text input field value is not empty show the "X" button
+	$("#tags").keyup(function() {
+		$("#x").fadeIn();
+		if ($.trim($("#tags").val()) == "") {
+			$("#x").fadeOut();
+		}
+	});
+	// on click of "X", delete input field value and hide "X"
+	$("#x").click(function() {
+		$("#tags").val("");
+		$(this).hide();
+	});
+});
+
+
 window.addEventListener('load', init());
 
 jQuery.ui.autocomplete.prototype._resizeMenu = function () {
@@ -8,13 +24,11 @@ jQuery.ui.autocomplete.prototype._resizeMenu = function () {
 
 //functions to get json data from datamuse
 function loadJSON(callback) {   
-
     var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'https://api.datamuse.com/words?ml=spoon&sp=*a&max=10', true); // Replace 'my_data' with the path to your file
+    xobj.open('GET', 'https://api.datamuse.com/words?ml=spoon&sp=*a&max=10', true);
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
-            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
             callback(xobj.responseText);
           }
     };
@@ -26,8 +40,14 @@ function init() {
   // Parse JSON string into object
     var actual_JSON = JSON.parse(response);
     console.log(actual_JSON);
+    return actual_JSON;
  });
 }
+
+init();
+
+var jsonData = init();
+console.log(jsonData);
 
 $( function() {
     var availableTags = [
