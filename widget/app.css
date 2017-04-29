@@ -1,107 +1,89 @@
 html, body {
-    height: 100%;
-}
+  height: 100%; }
 
 .ui-widget {
+  font-family: "Open Sans", sans-serif;
+  overflow: scroll;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .ui-widget #Noogle {
+    display: inline-block;
+    float: left;
+    width: 40%;
+    height: 35%; }
+  .ui-widget #searchContainer {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 40%;
+    height: 35%; }
+    .ui-widget #searchContainer #searchBarContainer {
+      position: absolute;
+      top: 43%;
+      width: 100%;
+      height: 14%; }
+      .ui-widget #searchContainer #searchBarContainer #tags {
+        position: relative;
+        width: 90%;
+        height: 100%;
+        border: 1px solid black;
+        float: left;
+        border-top: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-right: none;
+        padding: 0;
+        box-shadow: 0px 3px 0px #888888; }
+      .ui-widget #searchContainer #searchBarContainer #delete {
+        display: inline-block;
+        background-color: white;
+        outline: none;
+        float: left;
+        border-top: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-left: none;
+        width: 8.8%;
+        height: 100%;
+        box-shadow: 0px 3px 0px #888888; }
+    .ui-widget #searchContainer #noogleSearch, .ui-widget #searchContainer #feelingLucky {
+      border: none;
+      background-color: #E0E0E0;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 800;
+      text-align: center;
+      padding: 1.5%;
+      color: #616161; }
+    .ui-widget #searchContainer #noogleSearch {
+      position: absolute;
+      top: 70%;
+      left: 15%; }
+    .ui-widget #searchContainer #feelingLucky {
+      position: absolute;
+      top: 70%;
+      left: 45%; }
+    .ui-widget #searchContainer #noogleDescription {
+      font-family: "Open Sans", sans-serif;
+      position: absolute;
+      top: 50%; }
+  .ui-widget #noogleDescription {
     font-family: "Open Sans", sans-serif;
-    overflow: scroll;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-#Noogle {
-    display: inline-block;
-    float: left;
-    width: 40%;
-    height: 35%;
-}
-
-#searchContainer {
-    position: relative;
-    display: inline-block;
-    float: left;
-    width: 40%;
-    height: 35%;
-}
-
-#searchBarContainer {
     position: absolute;
-    top: 43%;
-    width: 100%;
-    height: 14%;
-}
-
-#tags {
-    position: relative;
-    width: 90%;
-    height: 100%;
-    border: 1px solid black;
-    float: left;
-    border-top: 1px solid lightgray;
-    border-left: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    border-right: none;
-    padding: 0;
-    box-shadow: box-shadow: 10px 10px 5px #888888;
-}
+    top: 50%; }
 
 #tags:focus {
-    border-top: 1px solid lightgray;
-    border-left: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    border-right: none;
-    outline: 0;
-}
-
-#noogleSearch, #feelingLucky {
-    border: none;
-    background-color: #E0E0E0;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 800;
-    text-align: center;
-    padding: 1.5%;
-    color: #616161;
-}
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-right: none;
+  outline: 0; }
 
 #noogleSearch:hover, #feelingLucky:hover {
-    color: black;
-    border: 1px solid black;
-}
+  color: black;
+  border: 1px solid black; }
 
 #noogleSearch:focus, #feelingLucky:focus {
-    outline: 1px solid #4285f4;
-}
+  outline: 1px solid #4285f4; }
 
-
-#noogleSearch {
-    position: absolute;
-    top: 70%;
-    left: 15%;
-}
-
-#feelingLucky {
-    position: absolute;
-    top: 70%;
-    left: 45%;
-}
-
-#noogleDescription {
-    font-family: "Open Sans", sans-serif;
-    position: absolute;
-    top: 50%;
-}
-
-#delete {
-    display: inline-block;
-    background-color: white;
-    outline: none;
-    float: left;
-    border-top: 1px solid lightgray;
-    border-right: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    border-left: none;
-    width: 8.8%;
-    height: 100%;
-}
-
+/*# sourceMappingURL=app.css.map */

@@ -12,24 +12,17 @@
   <script src="app.js"></script>
 </head>
 <body>
- 
 <div class="ui-widget">
-
- <img src="newGoogle.png" id="Noogle">
- 
- <div id="searchContainer">
- <label for="tags"> </label>
- 
- <div id="searchBarContainer">
-     <input id="tags" placeholder="Search Noogle or type URL">
-     <div id="delete"><span id="x">x</span></div>
- </div>
-     <button id="noogleSearch">Noogle Search</button>
-     <button id="feelingLucky">I'm Feeling Lucky</button> 
- </div>
- 
- <p id="noogleDescription">Noogle - The new and improved google</p>
- 
+<img src="newGoogle.png" id="Noogle">
+<div id="searchContainer">
+<div id="searchBarContainer">
+    <input id="tags" placeholder="Search Noogle or type URL" type="text">
+    <div id="delete"><span id="x">x</span></div>
+</div>   
+<button id="noogleSearch" onclick="noogleSearch()">Noogle Search</button>
+<button id="feelingLucky" onclick="feelingLucky()">I'm Feeling Lucky</button> 
+</div>
+<p id="noogleDescription">Noogle - The new and improved google</p>
 </div>
 </body>
 </html>
