@@ -75,3 +75,18 @@ function displayMeme(memeURL) {
     newMeme.setAttribute("id", "Noogle");
     noogle.parentNode.replaceChild(newMeme, noogle);
 }
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function noogleMic() {
+    //maybe add some more catchPhrases for the voice lady
+    let catchPhrases = [
+        "Do you even code?",
+    ];
+    let randomPhraseNumber = getRandomIntInclusive(0, (catchPhrases.length - 1));
+    responsiveVoice.speak(catchPhrases[randomPhraseNumber]);
+}
