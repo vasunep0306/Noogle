@@ -7,42 +7,30 @@ html, body {
   font-family: "Open Sans", sans-serif;
   overflow: scroll;
   position: relative;
+  margin: 0 auto;
   width: 100%;
   height: 100%; }
 
-/* line 13, /Users/Nick/Desktop/Noogle/widget/app.scss */
+/* line 14, /Users/Nick/Desktop/Noogle/widget/app.scss */
 #Noogle {
-  display: inline-block;
-  float: left;
-  width: 40%;
-  height: 35%; }
+  display: block;
+  margin: auto;
+  margin-top: 75px;
+  width: 400px;
+  height: 250px;
+  vertical-align: middle; }
 
-/* line 20, /Users/Nick/Desktop/Noogle/widget/app.scss */
-#searchContainer {
-  position: relative;
-  display: inline-block;
-  float: left;
-  width: 40%;
-  height: 35%; }
-  /* line 26, /Users/Nick/Desktop/Noogle/widget/app.scss */
-  #searchContainer #noogleSearch {
-    left: 15%; }
-  /* line 29, /Users/Nick/Desktop/Noogle/widget/app.scss */
-  #searchContainer #feelingLucky {
-    left: 45%; }
-
-/* line 34, /Users/Nick/Desktop/Noogle/widget/app.scss */
+/* line 23, /Users/Nick/Desktop/Noogle/widget/app.scss */
 #searchBarContainer {
-  position: absolute;
-  top: 43%;
-  width: 100%;
-  height: 14%; }
+  display: block;
+  margin: auto;
+  width: 550px; }
 
-/* line 41, /Users/Nick/Desktop/Noogle/widget/app.scss */
+/* line 29, /Users/Nick/Desktop/Noogle/widget/app.scss */
 #tags {
-  position: relative;
-  width: 90%;
-  height: 100%;
+  width: 475px;
+  height: 45px;
+  margin: auto;
   border: 1px solid black;
   float: left;
   border-top: 1px solid lightgray;
@@ -50,8 +38,24 @@ html, body {
   border-bottom: 1px solid lightgray;
   border-right: none;
   padding: 0;
-  box-shadow: 0px 3px 0px #888888; }
-  /* line 55, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  box-shadow: 0px 1px 0px #888888;
+  /*
+    supposed to style placeholder text but doesnt work for some reason
+    
+    &::-webkit-input-placeholder {
+        margin-left: 20px;
+    }
+    &::-moz-placeholder {
+        margin-left: 20px;
+    }
+    &:-ms-input-placeholder {
+        margin-left: 20px;
+    }
+    &:-moz-placeholder { 
+        margin-left: 20px;
+    }
+    */ }
+  /* line 43, /Users/Nick/Desktop/Noogle/widget/app.scss */
   #tags:focus {
     border-top: 1px solid lightgray;
     border-left: 1px solid lightgray;
@@ -59,7 +63,7 @@ html, body {
     border-right: none;
     outline: 0; }
 
-/* line 66, /Users/Nick/Desktop/Noogle/widget/app.scss */
+/* line 70, /Users/Nick/Desktop/Noogle/widget/app.scss */
 #delete {
   display: inline-block;
   background-color: white;
@@ -69,33 +73,45 @@ html, body {
   border-right: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   border-left: none;
-  width: 8.8%;
-  height: 100%;
-  box-shadow: 0px 3px 0px #888888; }
+  width: 50px;
+  height: 45px;
+  box-shadow: 0px 1px 0px #888888; }
+  /* line 81, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  #delete #googleMic {
+    height: 25px;
+    width: 18px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 15px; }
 
-/* line 82, /Users/Nick/Desktop/Noogle/widget/app.scss */
+/* line 93, /Users/Nick/Desktop/Noogle/widget/app.scss */
+#buttons {
+  display: block;
+  margin: auto;
+  height: 100px;
+  width: 300px; }
+
+/* line 100, /Users/Nick/Desktop/Noogle/widget/app.scss */
 #noogleSearch, #feelingLucky {
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 30px;
   border: none;
-  background-color: #E0E0E0;
+  background-color: #F0F0F0;
   font-family: "Open Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   text-align: center;
-  padding: 1.5%;
-  color: #616161;
-  position: absolute;
-  top: 70%; }
-  /* line 92, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  color: #616161; }
+  /* line 110, /Users/Nick/Desktop/Noogle/widget/app.scss */
   #noogleSearch:hover, #feelingLucky:hover {
     color: black;
     border: 1px solid black; }
-  /* line 96, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  /* line 114, /Users/Nick/Desktop/Noogle/widget/app.scss */
   #noogleSearch:focus, #feelingLucky:focus {
     outline: 1px solid #4285f4; }
 
-/* line 101, /Users/Nick/Desktop/Noogle/widget/app.scss */
-#noogleDescription {
-  font-family: "Open Sans", sans-serif;
-  position: absolute;
-  top: 50%; }
+/* line 119, /Users/Nick/Desktop/Noogle/widget/app.scss */
+#feelingLucky {
+  margin-left: 15px; }
 
 /*# sourceMappingURL=app.css.map */

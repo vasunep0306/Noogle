@@ -6,42 +6,30 @@ html, body {
     font-family: "Open Sans", sans-serif;
     overflow: scroll;
     position: relative;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
 }
 
 #Noogle {
-    display: inline-block;
-    float: left;
-    width: 40%;
-    height: 35%;
-}
-
-#searchContainer {
-    position: relative;
-    display: inline-block;
-    float: left;
-    width: 40%;
-    height: 35%;
-    #noogleSearch {
-        left: 15%;
-    }
-    #feelingLucky {
-        left: 45%;
-    }
+    display: block;
+    margin: auto;
+    margin-top: 75px;
+    width: 400px;
+    height: 250px;
+    vertical-align: middle;
 }
 
 #searchBarContainer {
-    position: absolute;
-    top: 43%;
-    width: 100%;
-    height: 14%;
+    display: block;
+    margin: auto;
+    width: 550px;
 }
 
 #tags {
-    position: relative;
-    width: 90%;
-    height: 100%;
+    width: 475px;
+    height: 45px;
+    margin: auto;
     border: 1px solid black;
     float: left;
     border: {
@@ -51,7 +39,7 @@ html, body {
         right: none;
     }
     padding: 0;
-    box-shadow: 0px 3px 0px #888888;
+    box-shadow: 0px 1px 0px #888888;
     &:focus {
         border: {
             top: 1px solid lightgray;
@@ -61,6 +49,22 @@ html, body {
         }
         outline: 0;
     }
+    /*
+    supposed to style placeholder text but doesnt work for some reason
+    
+    &::-webkit-input-placeholder {
+        margin-left: 20px;
+    }
+    &::-moz-placeholder {
+        margin-left: 20px;
+    }
+    &:-ms-input-placeholder {
+        margin-left: 20px;
+    }
+    &:-moz-placeholder { 
+        margin-left: 20px;
+    }
+    */
 }
 
 #delete {
@@ -74,21 +78,35 @@ html, body {
         bottom: 1px solid lightgray;
         left: none;
     }
-    width: 8.8%;
-    height: 100%;
-    box-shadow: 0px 3px 0px #888888;
+    #googleMic {
+        height: 25px;
+        width: 18px;
+        float: right;
+        margin-top: 8px;
+        margin-right: 15px;
+    }
+    width: 50px;
+    height: 45px;
+    box-shadow: 0px 1px 0px #888888;
+}
+
+#buttons {
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 300px;
 }
 
 #noogleSearch, #feelingLucky {
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 30px;
     border: none;
-    background-color: #E0E0E0;
+    background-color: #F0F0F0;
     font-family: "Open Sans", sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     text-align: center;
-    padding: 1.5%;
     color: #616161;
-    position: absolute;
-    top: 70%;
     &:hover {
         color: black;
         border: 1px solid black;
@@ -98,8 +116,7 @@ html, body {
     }
 }
 
-#noogleDescription {
-    font-family: "Open Sans", sans-serif;
-    position: absolute;
-    top: 50%;
-}   
+#feelingLucky{
+    margin-left: 15px;
+}
+ 
