@@ -16,9 +16,9 @@ html, body {
   display: block;
   margin: auto;
   margin-top: 75px;
+  margin-bottom: 20px;
   width: 400px;
-  height: 250px;
-  vertical-align: middle; }
+  height: 250px; }
 
 /* line 23, /Users/Nick/Desktop/Noogle/widget/app.scss */
 #searchBarContainer {
