@@ -9,7 +9,7 @@ html, body {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  height: 100%; }
+  height: 90%; }
 
 /* line 14, /Users/Nick/Desktop/Noogle/widget/app.scss */
 #Noogle {
@@ -113,5 +113,11 @@ html, body {
 /* line 119, /Users/Nick/Desktop/Noogle/widget/app.scss */
 #feelingLucky {
   margin-left: 15px; }
+
+/* line 123, /Users/Nick/Desktop/Noogle/widget/app.scss */
+#noogleDefinition {
+  display: block;
+  text-align: center;
+  font-family: "Open Sans", sans-serif; }
 
 /*# sourceMappingURL=app.css.map */

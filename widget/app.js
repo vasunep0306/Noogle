@@ -49,9 +49,13 @@ $( function() {
 
 
 function noogleSearch() {
-    console.log(document.getElementById("tags").innerHTML);
+    if (document.getElementById("tags").innerHTML == "") {
+        alert("You can't search for nothing bro beans");
+    } else {
+        //do something cool
+    }
 }
 
 function feelingLucky() {
-    alert("Yeah too bad you're not lucky");
+    alert("hahahahahahahah bro!!! you're not lucky at all!");
 }
