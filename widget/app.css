@@ -38,23 +38,7 @@ html, body {
   border-bottom: 1px solid lightgray;
   border-right: none;
   padding: 0;
-  box-shadow: 0px 1px 0px #888888;
-  /*
-    supposed to style placeholder text but doesnt work for some reason
-    
-    &::-webkit-input-placeholder {
-        margin-left: 20px;
-    }
-    &::-moz-placeholder {
-        margin-left: 20px;
-    }
-    &:-ms-input-placeholder {
-        margin-left: 20px;
-    }
-    &:-moz-placeholder { 
-        margin-left: 20px;
-    }
-    */ }
+  box-shadow: 0px 1px 0px #888888; }
   /* line 43, /Users/Nick/Desktop/Noogle/widget/app.scss */
   #tags:focus {
     border-top: 1px solid lightgray;
@@ -62,6 +46,22 @@ html, body {
     border-bottom: 1px solid lightgray;
     border-right: none;
     outline: 0; }
+  /* line 52, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  #tags::-webkit-input-placeholder {
+    text-indent: 10px;
+    color: #C8C8C8; }
+  /* line 56, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  #tags::-moz-placeholder {
+    text-indent: 10px;
+    color: #C8C8C8; }
+  /* line 60, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  #tags:-ms-input-placeholder {
+    text-indent: 10px;
+    color: #C8C8C8; }
+  /* line 64, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  #tags:-moz-placeholder {
+    text-indent: 10px;
+    color: #C8C8C8; }
 
 /* line 70, /Users/Nick/Desktop/Noogle/widget/app.scss */
 #delete {

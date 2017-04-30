@@ -50,15 +50,14 @@ function feelingLucky() {
 }
 
 function rickRoll() {
-    let elements = document.getElementsByTagName("*");
     document.body.innerHTML = '';
-    var rick = document.createElement("IMG");
+    let rick = document.createElement("IMG");
     rick.src = "rickRolled.gif";
     rick.style.display = "block";
     rick.style.margin = "auto";
     rick.style.width = "100%";
     rick.style.height = "100%";
-    var audio = new Audio('rickRolling.mp3');
-    audio.play();
     document.body.appendChild(rick);
+    let audio = new Audio('rickRolling.mp3');
+    audio.play();  
 }
