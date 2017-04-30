@@ -1,39 +1,12 @@
+var jsonData = {};
+var availableMemes = [];
+getMemes();
+
 jQuery.ui.autocomplete.prototype._resizeMenu = function () {
   let ul = this.menu.element;
   ul.outerWidth(this.element.outerWidth());
   ul.outerHeight(this.element.outerHeight() * 6);
 }
-
-$( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  } );
-
 
 function noogleSearch() {
     if ($.trim($("#tags").val()) == "") {
@@ -60,4 +33,18 @@ function rickRoll() {
     document.body.appendChild(rick);
     let audio = new Audio('rickRolling.mp3');
     audio.play();  
+}
+
+//makes GET request to memeGenerating API and stores data in availableMemes
+function getMemes() {
+    $.when($.getJSON("https://api.imgflip.com/get_memes", function(data) {
+        jsonData = data.data.memes;
+    })).then(function() {
+        for (let i = 0; i < jsonData.length; i++) {
+            availableMemes.push(jsonData[i].name);
+        }
+        $( "#tags" ).autocomplete({
+            source: availableMemes
+        });
+    });
 }
