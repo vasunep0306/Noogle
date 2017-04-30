@@ -41,12 +41,12 @@ function noogleSearch() {
     } else {
         //this is where you make a GET request to a web API
         console.log($.trim($("#tags").val()));
-        rickRoll();
     }
 }
 
 function feelingLucky() {
     alert("hahahahahahahah bro!!! you're not lucky at all!");
+    rickRoll();
 }
 
 function rickRoll() {
@@ -56,6 +56,9 @@ function rickRoll() {
     rick.src = "rickRolled.gif";
     rick.style.display = "block";
     rick.style.margin = "auto";
-    rick.style.verticalAlign = "middle";
+    rick.style.width = "100%";
+    rick.style.height = "100%";
+    var audio = new Audio('rickRolling.mp3');
+    audio.play();
     document.body.appendChild(rick);
 }
