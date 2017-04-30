@@ -2,6 +2,16 @@ var jsonData = {};
 var availableMemes = [];
 getMemes();
 
+Array.prototype.contains = function(obj) {
+    var i = this.length;
+    while (i--) {
+        if (this[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+}
+
 jQuery.ui.autocomplete.prototype._resizeMenu = function () {
   let ul = this.menu.element;
   ul.outerWidth(this.element.outerWidth());
@@ -9,11 +19,27 @@ jQuery.ui.autocomplete.prototype._resizeMenu = function () {
 }
 
 function noogleSearch() {
-    if ($.trim($("#tags").val()) == "") {
+    var searchText = $.trim($("#tags").val());
+    if (searchText == "") {
         alert("You can't search for nothing bro beans");
     } else {
-        //this is where you make a GET request to a web API
-        console.log($.trim($("#tags").val()));
+        if (availableMemes.contains(searchText)) {
+            for(let i = 0; i < jsonData.length; i++) {
+                if (jsonData[i].name == searchText) {
+                    document.body.innerHTML = '';
+                    let newMeme = document.createElement("IMG");
+                    newMeme.src = jsonData[i].url;
+                    newMeme.style.display = "block";
+                    newMeme.style.margin = "auto";
+                    newMeme.style.width = "100%";
+                    newMeme.style.height = "100%";
+                    document.body.appendChild(newMeme);
+                    break;
+                } 
+            }
+        } else {
+            alert("That's not even a meme bro");
+        }
     }
 }
 
