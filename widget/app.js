@@ -71,3 +71,7 @@ function displayMeme(memeURL) {
     newMeme.style.height = "100%";
     document.body.appendChild(newMeme);
 }
+
+function animateMic() {
+    alert("Obviously this does nothing");
+}
