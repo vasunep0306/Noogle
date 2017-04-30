@@ -26,14 +26,7 @@ function noogleSearch() {
         if (availableMemes.contains(searchText)) {
             for(let i = 0; i < jsonData.length; i++) {
                 if (jsonData[i].name == searchText) {
-                    document.body.innerHTML = '';
-                    let newMeme = document.createElement("IMG");
-                    newMeme.src = jsonData[i].url;
-                    newMeme.style.display = "block";
-                    newMeme.style.margin = "auto";
-                    newMeme.style.width = "100%";
-                    newMeme.style.height = "100%";
-                    document.body.appendChild(newMeme);
+                    displayMeme(jsonData[i].url);
                     break;
                 } 
             }
@@ -49,14 +42,7 @@ function feelingLucky() {
 }
 
 function rickRoll() {
-    document.body.innerHTML = '';
-    let rick = document.createElement("IMG");
-    rick.src = "rickRolled.gif";
-    rick.style.display = "block";
-    rick.style.margin = "auto";
-    rick.style.width = "100%";
-    rick.style.height = "100%";
-    document.body.appendChild(rick);
+    displayMeme("rickRolled.gif");
     let audio = new Audio('rickRolling.mp3');
     audio.play();  
 }
@@ -73,4 +59,15 @@ function getMemes() {
             source: availableMemes
         });
     });
+}
+
+function displayMeme(memeURL) {
+    document.body.innerHTML = '';
+    let newMeme = document.createElement("IMG");
+    newMeme.src = memeURL;
+    newMeme.style.display = "block";
+    newMeme.style.margin = "auto";
+    newMeme.style.width = "100%";
+    newMeme.style.height = "100%";
+    document.body.appendChild(newMeme);
 }
