@@ -1,89 +1,101 @@
+/* line 1, /Users/Nick/Desktop/Noogle/widget/app.scss */
 html, body {
   height: 100%; }
 
+/* line 5, /Users/Nick/Desktop/Noogle/widget/app.scss */
 .ui-widget {
   font-family: "Open Sans", sans-serif;
   overflow: scroll;
   position: relative;
   width: 100%;
   height: 100%; }
-  .ui-widget #Noogle {
-    display: inline-block;
-    float: left;
-    width: 40%;
-    height: 35%; }
-  .ui-widget #searchContainer {
-    position: relative;
-    display: inline-block;
-    float: left;
-    width: 40%;
-    height: 35%; }
-    .ui-widget #searchContainer #searchBarContainer {
-      position: absolute;
-      top: 43%;
-      width: 100%;
-      height: 14%; }
-      .ui-widget #searchContainer #searchBarContainer #tags {
-        position: relative;
-        width: 90%;
-        height: 100%;
-        border: 1px solid black;
-        float: left;
-        border-top: 1px solid lightgray;
-        border-left: 1px solid lightgray;
-        border-bottom: 1px solid lightgray;
-        border-right: none;
-        padding: 0;
-        box-shadow: 0px 3px 0px #888888; }
-      .ui-widget #searchContainer #searchBarContainer #delete {
-        display: inline-block;
-        background-color: white;
-        outline: none;
-        float: left;
-        border-top: 1px solid lightgray;
-        border-right: 1px solid lightgray;
-        border-bottom: 1px solid lightgray;
-        border-left: none;
-        width: 8.8%;
-        height: 100%;
-        box-shadow: 0px 3px 0px #888888; }
-    .ui-widget #searchContainer #noogleSearch, .ui-widget #searchContainer #feelingLucky {
-      border: none;
-      background-color: #E0E0E0;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 800;
-      text-align: center;
-      padding: 1.5%;
-      color: #616161; }
-    .ui-widget #searchContainer #noogleSearch {
-      position: absolute;
-      top: 70%;
-      left: 15%; }
-    .ui-widget #searchContainer #feelingLucky {
-      position: absolute;
-      top: 70%;
-      left: 45%; }
-    .ui-widget #searchContainer #noogleDescription {
-      font-family: "Open Sans", sans-serif;
-      position: absolute;
-      top: 50%; }
-  .ui-widget #noogleDescription {
-    font-family: "Open Sans", sans-serif;
-    position: absolute;
-    top: 50%; }
 
-#tags:focus {
+/* line 13, /Users/Nick/Desktop/Noogle/widget/app.scss */
+#Noogle {
+  display: inline-block;
+  float: left;
+  width: 40%;
+  height: 35%; }
+
+/* line 20, /Users/Nick/Desktop/Noogle/widget/app.scss */
+#searchContainer {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 40%;
+  height: 35%; }
+  /* line 26, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  #searchContainer #noogleSearch {
+    left: 15%; }
+  /* line 29, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  #searchContainer #feelingLucky {
+    left: 45%; }
+
+/* line 34, /Users/Nick/Desktop/Noogle/widget/app.scss */
+#searchBarContainer {
+  position: absolute;
+  top: 43%;
+  width: 100%;
+  height: 14%; }
+
+/* line 41, /Users/Nick/Desktop/Noogle/widget/app.scss */
+#tags {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  border: 1px solid black;
+  float: left;
   border-top: 1px solid lightgray;
   border-left: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   border-right: none;
-  outline: 0; }
+  padding: 0;
+  box-shadow: 0px 3px 0px #888888; }
+  /* line 55, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  #tags:focus {
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-right: none;
+    outline: 0; }
 
-#noogleSearch:hover, #feelingLucky:hover {
-  color: black;
-  border: 1px solid black; }
+/* line 66, /Users/Nick/Desktop/Noogle/widget/app.scss */
+#delete {
+  display: inline-block;
+  background-color: white;
+  outline: none;
+  float: left;
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-left: none;
+  width: 8.8%;
+  height: 100%;
+  box-shadow: 0px 3px 0px #888888; }
 
-#noogleSearch:focus, #feelingLucky:focus {
-  outline: 1px solid #4285f4; }
+/* line 82, /Users/Nick/Desktop/Noogle/widget/app.scss */
+#noogleSearch, #feelingLucky {
+  border: none;
+  background-color: #E0E0E0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  padding: 1.5%;
+  color: #616161;
+  position: absolute;
+  top: 70%; }
+  /* line 92, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  #noogleSearch:hover, #feelingLucky:hover {
+    color: black;
+    border: 1px solid black; }
+  /* line 96, /Users/Nick/Desktop/Noogle/widget/app.scss */
+  #noogleSearch:focus, #feelingLucky:focus {
+    outline: 1px solid #4285f4; }
+
+/* line 101, /Users/Nick/Desktop/Noogle/widget/app.scss */
+#noogleDescription {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  top: 50%; }
 
 /*# sourceMappingURL=app.css.map */
