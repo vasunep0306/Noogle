@@ -42,8 +42,8 @@ function feelingLucky() {
 }
 
 function rickRoll() {
-    displayMeme("rickRolled.gif");
-    let audio = new Audio('rickRolling.mp3');
+    displayMeme("media/rickRolled.gif");
+    let audio = new Audio('media/rickRolling.mp3');
     audio.play();  
 }
 
