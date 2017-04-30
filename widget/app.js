@@ -1,16 +1,3 @@
-$(document).ready(function() {
-	$("#tags").keyup(function() {
-		$("#x").fadeIn();
-		if ($.trim($("#tags").val()) == "") {
-			$("#x").fadeOut();
-		}
-	});
-	$("#x").click(function() {
-		$("#tags").val("");
-		$(this).hide();
-	});
-});
-
 jQuery.ui.autocomplete.prototype._resizeMenu = function () {
   let ul = this.menu.element;
   ul.outerWidth(this.element.outerWidth());
@@ -49,10 +36,11 @@ $( function() {
 
 
 function noogleSearch() {
-    if (document.getElementById("tags").innerHTML == "") {
+    if ($.trim($("#tags").val()) == "") {
         alert("You can't search for nothing bro beans");
     } else {
-        //do something cool
+        //this is where you make a GET request to a web API
+        console.log($.trim($("#tags").val()));
     }
 }
 
