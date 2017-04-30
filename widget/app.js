@@ -42,7 +42,14 @@ function feelingLucky() {
 }
 
 function rickRoll() {
-    displayMeme("media/rickRolled.gif");
+    document.body.innerHTML = '';
+    let rick = document.createElement("IMG");
+    rick.src = "media/rickRolled.gif";
+    rick.style.display = "block";
+    rick.style.margin = "auto";
+    rick.style.width = "100%";
+    rick.style.height = "100%";
+    document.body.appendChild(rick);
     let audio = new Audio('media/rickRolling.mp3');
     audio.play();  
 }
@@ -62,12 +69,9 @@ function getMemes() {
 }
 
 function displayMeme(memeURL) {
-    document.body.innerHTML = '';
+    let noogle = document.getElementById("Noogle");
     let newMeme = document.createElement("IMG");
     newMeme.src = memeURL;
-    newMeme.style.display = "block";
-    newMeme.style.margin = "auto";
-    newMeme.style.width = "100%";
-    newMeme.style.height = "100%";
-    document.body.appendChild(newMeme);
+    newMeme.setAttribute("id", "Noogle");
+    noogle.parentNode.replaceChild(newMeme, noogle);
 }
